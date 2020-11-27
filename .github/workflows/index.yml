@@ -14,7 +14,10 @@ on:
   workflow_dispatch:
     branches: [ master ]
   repository_dispatch:
-    types: do-something
+    types: 
+      - do-something
+      - test2
+      - test-from-robot
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
