@@ -28,7 +28,7 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: echo value
+      - name: check
         run: |
           echo ${{ github.event.client_payload.var_123 }} > file
           echo ${{ github.event.client_payload.source_pr }} >> file
