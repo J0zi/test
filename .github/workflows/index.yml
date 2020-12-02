@@ -30,7 +30,6 @@ jobs:
     steps:
       - name: check
         run: |
-          echo ${{ github.event.client_payload.var_123 }} > file
           echo ${{ github.event.client_payload.source_pr }} >> file
           cat file
 
